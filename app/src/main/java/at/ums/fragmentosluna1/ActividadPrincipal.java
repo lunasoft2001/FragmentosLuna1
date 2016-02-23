@@ -23,6 +23,21 @@ public class ActividadPrincipal extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+
+            FragmentManager fragmentManager = getFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            CountFragment fragment = new CountFragment();
+            transaction.add(R.id.fragment, fragment);
+            transaction.commit();
+
+
+
+
+
+
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,18 +48,18 @@ public class ActividadPrincipal extends AppCompatActivity {
         });
 
         add_fragment = (Button)findViewById(R.id.add_fragment);
-        add_fragment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-                CountFragment fragment = new CountFragment();
-                transaction.add(R.id.contenedor, fragment);
-                transaction.commit();
-
-
-            }
-        });
+//        add_fragment.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                FragmentManager fragmentManager = getFragmentManager();
+//                FragmentTransaction transaction = fragmentManager.beginTransaction();
+//                CountFragment fragment = new CountFragment();
+//                transaction.add(R.id.fragment, fragment);
+//                transaction.commit();
+//
+//
+//            }
+//        });
 
 
     }

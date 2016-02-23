@@ -7,8 +7,7 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 tools:context="at.ums.fragmentosluna1.ActividadPrincipalFragment"
-                tools:showIn="@layout/activity_actividad_principal"
-                android:id="@+id/contenedor">
+                tools:showIn="@layout/activity_actividad_principal">
 
     <TextView
         android:layout_width="wrap_content"
